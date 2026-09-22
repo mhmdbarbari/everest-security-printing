@@ -1,0 +1,5 @@
+node_modules
+quotations.db
+quotations.db-journal
+quotations.db-wal
+quotations.db-shm
