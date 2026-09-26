@@ -24,7 +24,7 @@ export default function SecurityFeatures() {
           </div>
 
           <div>
-            <h2 className="text-3xl font-normal leading-tight text-[#F5F1E9] md:text-[2.75rem]">
+            <h2 className="text-2xl font-normal leading-tight text-[#F5F1E9] md:text-4xl">
               {securityPrinting.heading}
             </h2>
             <div className="mt-6 space-y-5 text-[17px] leading-relaxed text-[#F5F1E9]/70">

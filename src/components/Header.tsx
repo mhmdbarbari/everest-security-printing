@@ -85,7 +85,7 @@ export default function Header() {
               <a
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className={`relative inline-block py-3 text-2xl font-medium text-[#F5F1E9] transition-all duration-500 ease-out ${
+                className={`relative inline-block py-3 text-xl font-medium text-[#F5F1E9] transition-all duration-500 ease-out ${
                   open ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
                 }`}
                 style={{ transitionDelay: open ? `${150 + i * 70}ms` : '0ms' }}

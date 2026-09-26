@@ -41,7 +41,7 @@ function Chapter({
           </div>
 
           <div className="reveal">
-            <h2 className="text-2xl font-normal leading-tight text-[#101D2B] md:text-4xl">
+            <h2 className="text-xl font-normal leading-tight text-[#101D2B] md:text-3xl">
               {heading}
             </h2>
             <div className="mt-5 space-y-4 text-[16px] leading-relaxed text-[#101D2B]/75">
@@ -74,7 +74,7 @@ export default function AboutPage() {
           >
             ← Back Home
           </Link>
-          <h1 className="max-w-2xl text-4xl leading-[1.05] text-[#F5F1E9] md:text-6xl">
+          <h1 className="max-w-2xl text-3xl leading-[1.1] text-[#F5F1E9] md:text-5xl">
             {aboutPage.intro.heading}
           </h1>
         </div>
@@ -128,7 +128,7 @@ export default function AboutPage() {
       </Chapter>
 
       <section className="bg-[#101D2B] py-20 text-center">
-        <h2 className="text-3xl text-[#F5F1E9] md:text-4xl">Ready to work with us?</h2>
+        <h2 className="text-2xl text-[#F5F1E9] md:text-3xl">Ready to work with us?</h2>
         <Link
           to="/#quotations"
           className="mt-8 inline-block rounded-full bg-[#C4A46A] px-7 py-3 text-sm font-medium text-[#101D2B] transition hover:bg-[#d3b884]"

@@ -12,7 +12,7 @@ export default function Services() {
     <section id="services" className="bg-[#F5F1E9] py-28">
       <div className="mx-auto max-w-6xl px-6">
         <div className="reveal mb-16 max-w-xl">
-          <h2 className="text-3xl font-normal leading-tight text-[#101D2B] md:text-[2.75rem]">
+          <h2 className="text-2xl font-normal leading-tight text-[#101D2B] md:text-4xl">
             Our Services
           </h2>
           <span className="mt-4 block h-px w-16 bg-[#C4A46A]" />
@@ -35,7 +35,7 @@ export default function Services() {
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-normal text-[#101D2B] md:text-3xl">
+                <h3 className="text-xl font-normal text-[#101D2B] md:text-2xl">
                   {service.title}
                 </h3>
                 <p className="mt-4 text-[16px] leading-relaxed text-[#101D2B]/75">

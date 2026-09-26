@@ -67,7 +67,7 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="relative overflow-hidden bg-[#101D2B] py-28">
       <div className="mx-auto max-w-6xl px-6 text-center">
-        <span className="eyebrow text-2xl font-medium text-[#F5F1E9]/75 md:text-4xl">Portfolio</span>
+        <span className="eyebrow text-xl font-medium text-[#F5F1E9]/75 md:text-3xl">Portfolio</span>
         <p className="mx-auto mt-5 max-w-2xl text-[17px] leading-relaxed text-[#F5F1E9]/65">
           {portfolioIntro}
         </p>
@@ -104,13 +104,13 @@ export default function Portfolio() {
 
           <div className="mt-8 flex flex-col items-center text-center">
             <div className="flex items-baseline gap-2">
-              <span className="font-normal text-2xl text-[#C4A46A] md:text-3xl">
+              <span className="font-normal text-xl text-[#C4A46A] md:text-2xl">
                 {String(index + 1).padStart(2, '0')}
               </span>
               <span className="text-sm text-[#F5F1E9]/40">/ {String(clients.length).padStart(2, '0')}</span>
             </div>
             <p
-              className="mt-2 text-2xl text-[#F5F1E9] transition-opacity duration-300 md:text-3xl"
+              className="mt-2 text-xl text-[#F5F1E9] transition-opacity duration-300 md:text-2xl"
               style={{ opacity: phase === 'visible' ? 1 : 0 }}
             >
               {client.name}

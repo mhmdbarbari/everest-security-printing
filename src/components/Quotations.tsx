@@ -37,7 +37,7 @@ export default function Quotations() {
     <section id="quotations" className="bg-[#F5F1E9] py-28">
       <div className="mx-auto grid max-w-6xl gap-14 px-6 md:grid-cols-[0.8fr_1.2fr]">
         <div className="reveal">
-          <h2 className="text-3xl font-normal leading-tight text-[#101D2B] md:text-[2.75rem]">
+          <h2 className="text-2xl font-normal leading-tight text-[#101D2B] md:text-4xl">
             {quotations.heading}
           </h2>
           <p className="mt-6 text-[17px] leading-relaxed text-[#101D2B]/75">

@@ -15,7 +15,7 @@ export default function About() {
         </div>
 
         <div className="reveal">
-          <h2 className="text-3xl font-normal leading-tight text-[#101D2B] md:text-[2.75rem]">
+          <h2 className="text-2xl font-normal leading-tight text-[#101D2B] md:text-4xl">
             Who We Are
           </h2>
           <div className="mt-6 space-y-5 text-[17px] leading-relaxed text-[#101D2B]/75">

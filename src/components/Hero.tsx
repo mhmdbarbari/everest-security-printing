@@ -65,7 +65,7 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-24 pt-40">
         <p className="eyebrow text-xs font-medium text-[#F5F1E9]/70">{hero.eyebrow}</p>
-        <h1 className="mt-6 max-w-2xl font-normal text-5xl leading-[1.05] text-[#F5F1E9] md:text-7xl">
+        <h1 className="mt-6 max-w-2xl font-normal text-4xl leading-[1.1] text-[#F5F1E9] md:text-6xl">
           Trust,
           <br />
           <span className="text-[#C4A46A]">engraved</span> in every detail.
