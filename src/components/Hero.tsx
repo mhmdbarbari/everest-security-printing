@@ -35,7 +35,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section id="top" className="relative flex h-screen min-h-[640px] items-end overflow-hidden bg-[#0d0d0d]">
+    <section id="top" className="relative flex h-screen min-h-[640px] items-end overflow-hidden bg-[#101D2B]">
       <div
         className="absolute inset-0 -top-16"
         style={{ transform: `translateY(${Math.min(scrollY, 700) * 0.22}px)` }}
@@ -61,17 +61,17 @@ export default function Hero() {
         <div className="scan-sweep pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-transparent via-white/10 to-transparent mix-blend-overlay" />
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d]/85 via-[#0d0d0d]/35 to-[#0d0d0d]/50" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#101D2B]/88 via-[#101D2B]/40 to-[#101D2B]/55" />
 
       <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-24 pt-40">
-        <p className="eyebrow text-xs font-medium text-white/70">{hero.eyebrow}</p>
-        <h1 className="mt-6 max-w-2xl font-normal text-5xl leading-[1.05] text-white md:text-7xl">
+        <p className="eyebrow text-xs font-medium text-[#F5F1E9]/70">{hero.eyebrow}</p>
+        <h1 className="mt-6 max-w-2xl font-normal text-5xl leading-[1.05] text-[#F5F1E9] md:text-7xl">
           Trust,
           <br />
-          <span className="italic text-white/90">engraved</span> in every detail.
+          <span className="italic text-[#C4A46A]">engraved</span> in every detail.
         </h1>
         <p
-          className="mt-7 max-w-lg text-xl italic leading-relaxed text-white/75"
+          className="mt-7 max-w-lg text-xl italic leading-relaxed text-[#F5F1E9]/75"
           style={{ fontFamily: "'Fraunces', Georgia, serif" }}
         >
           {hero.subtitle}
@@ -79,13 +79,13 @@ export default function Hero() {
         <div className="mt-12 flex flex-wrap items-center gap-7">
           <a
             href={hero.ctaPrimary.href}
-            className="rounded-full bg-[#ffffff] px-8 py-3.5 text-sm font-medium text-[#111111] transition hover:bg-white/90"
+            className="rounded-full bg-[#C4A46A] px-8 py-3.5 text-sm font-medium text-[#101D2B] transition hover:bg-[#d3b884]"
           >
             {hero.ctaPrimary.label}
           </a>
           <a
             href={hero.ctaSecondary.href}
-            className="eyebrow border-b border-white/40 pb-1 text-xs font-medium text-white/85 transition hover:border-white hover:text-white"
+            className="eyebrow border-b border-[#F5F1E9]/40 pb-1 text-xs font-medium text-[#F5F1E9]/85 transition hover:border-[#C4A46A] hover:text-[#C4A46A]"
           >
             {hero.ctaSecondary.label}
           </a>
@@ -99,7 +99,7 @@ export default function Hero() {
             onClick={() => setIndex(i)}
             aria-label={`Slide ${i + 1}`}
             className={`h-1.5 rounded-full transition-all ${
-              i === index ? 'w-8 bg-white' : 'w-1.5 bg-white/40 hover:bg-white/60'
+              i === index ? 'w-8 bg-[#C4A46A]' : 'w-1.5 bg-[#F5F1E9]/40 hover:bg-[#F5F1E9]/60'
             }`}
           />
         ))}

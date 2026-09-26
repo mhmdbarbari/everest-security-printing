@@ -3,7 +3,7 @@ import { brand } from '../data/media'
 
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-[#111111] pt-20 pb-8 text-white/60">
+    <footer id="contact" className="bg-[#101D2B] pt-20 pb-8 text-[#F5F1E9]/65">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
           <div>
@@ -15,18 +15,18 @@ export default function Footer() {
               href={contact.facebook}
               target="_blank"
               rel="noreferrer"
-              className="mt-5 inline-flex items-center gap-2 text-sm text-white hover:underline"
+              className="mt-5 inline-flex items-center gap-2 text-sm text-[#F5F1E9] hover:text-[#C4A46A]"
             >
               Facebook →
             </a>
           </div>
 
           <div>
-            <h4 className="eyebrow text-xs font-medium text-white/80">Navigate</h4>
+            <h4 className="eyebrow text-xs font-medium text-[#C4A46A]">Navigate</h4>
             <ul className="mt-5 space-y-2.5 text-[15px]">
               {nav.map((item) => (
                 <li key={item.href}>
-                  <a href={item.href} className="hover:text-white">
+                  <a href={item.href} className="hover:text-[#C4A46A]">
                     {item.label}
                   </a>
                 </li>
@@ -35,14 +35,14 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="eyebrow text-xs font-medium text-white/80">Contact</h4>
+            <h4 className="eyebrow text-xs font-medium text-[#C4A46A]">Contact</h4>
             <ul className="mt-5 space-y-2.5 text-[15px]">
               <li>Tel: {contact.tel}</li>
               <li>Fax: {contact.fax}</li>
               <li>Cell: {contact.cell}</li>
               <li>{contact.address}</li>
               <li>
-                <a href={`mailto:${contact.email}`} className="hover:text-white">
+                <a href={`mailto:${contact.email}`} className="hover:text-[#C4A46A]">
                   {contact.email}
                 </a>
               </li>
@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 border-t border-white/10 pt-6 text-center text-xs text-white/35">
+        <div className="mt-16 border-t border-[#C4A46A]/20 pt-6 text-center text-xs text-[#F5F1E9]/40">
           © {new Date().getFullYear()} Everest Security Printing. All rights reserved.
         </div>
       </div>

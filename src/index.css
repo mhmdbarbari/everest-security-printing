@@ -2,14 +2,14 @@
 @import 'tailwindcss';
 
 :root {
-  --ink: #111111;
-  --ink-soft: #5c5c5c;
-  --paper: #ffffff;
-  --paper-alt: #f0f0f0;
-  --line: rgba(0, 0, 0, 0.12);
-  --accent: #111111;
-  --accent-soft: #e8e8e8;
-  --brass: #333333;
+  --ink: #101d2b;
+  --ink-soft: rgba(16, 29, 43, 0.7);
+  --paper: #f5f1e9;
+  --paper-alt: #efe7d6;
+  --line: rgba(16, 29, 43, 0.12);
+  --accent: #c4a46a;
+  --accent-soft: rgba(196, 164, 106, 0.12);
+  --brass: #c4a46a;
 }
 
 * {
@@ -173,5 +173,5 @@ h1, h2, h3, h4 {
 
 ::selection {
   background: var(--accent);
-  color: var(--paper);
+  color: var(--ink);
 }

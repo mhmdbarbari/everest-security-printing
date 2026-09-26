@@ -22,7 +22,7 @@ export default function Header() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        open ? '' : scrolled ? 'bg-[#ffffff]/90 shadow-sm shadow-black/5 backdrop-blur' : 'bg-transparent'
+        open ? '' : scrolled ? 'bg-[#F5F1E9]/90 shadow-sm shadow-black/5 backdrop-blur' : 'bg-transparent'
       }`}
     >
       <div className="relative z-10 mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
@@ -40,7 +40,7 @@ export default function Header() {
               key={item.href}
               href={item.href}
               className={`eyebrow text-[13px] font-medium transition ${
-                scrolled ? 'text-[#111111]/70 hover:text-[#111111]' : 'text-white/85 hover:text-white'
+                scrolled ? 'text-[#101D2B]/70 hover:text-[#C4A46A]' : 'text-[#F5F1E9]/85 hover:text-[#C4A46A]'
               }`}
             >
               {item.label}
@@ -49,7 +49,7 @@ export default function Header() {
         </nav>
 
         <button
-          className={`relative z-10 md:hidden ${open || !scrolled ? 'text-white' : 'text-[#111111]'}`}
+          className={`relative z-10 md:hidden ${open || !scrolled ? 'text-[#F5F1E9]' : 'text-[#101D2B]'}`}
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle menu"
         >
@@ -67,13 +67,13 @@ export default function Header() {
       />
 
       <nav
-        className={`fixed inset-y-0 right-0 flex w-[78%] max-w-xs flex-col justify-between overflow-hidden rounded-l-[2rem] bg-[#0d0d0d] px-8 py-24 shadow-[-20px_0_60px_rgba(0,0,0,0.35)] transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] md:hidden ${
+        className={`fixed inset-y-0 right-0 flex w-[78%] max-w-xs flex-col justify-between overflow-hidden rounded-l-[2rem] bg-[#101D2B] px-8 py-24 shadow-[-20px_0_60px_rgba(0,0,0,0.35)] transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] md:hidden ${
           open ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
         <span
           aria-hidden
-          className="pointer-events-none absolute -right-8 -top-14 select-none italic text-white/[0.05]"
+          className="pointer-events-none absolute -right-8 -top-14 select-none italic text-[#F5F1E9]/[0.05]"
           style={{ fontFamily: "'Fraunces', Georgia, serif", fontSize: '13rem' }}
         >
           e
@@ -85,20 +85,20 @@ export default function Header() {
               <a
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className={`relative inline-block py-3 text-2xl text-white transition-all duration-500 ease-out ${
+                className={`relative inline-block py-3 text-2xl text-[#F5F1E9] transition-all duration-500 ease-out ${
                   open ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
                 }`}
                 style={{ fontFamily: "'Fraunces', Georgia, serif", transitionDelay: open ? `${150 + i * 70}ms` : '0ms' }}
               >
                 {item.label}
-                <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-white/60 transition-all duration-300 ease-out group-hover:w-full" />
+                <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-[#C4A46A] transition-all duration-300 ease-out group-hover:w-full" />
               </a>
             </li>
           ))}
         </ul>
 
         <div
-          className={`relative border-t border-white/10 pt-6 text-sm text-white/50 transition-all duration-500 ease-out ${
+          className={`relative border-t border-[#C4A46A]/25 pt-6 text-sm text-[#F5F1E9]/60 transition-all duration-500 ease-out ${
             open ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
           }`}
           style={{ transitionDelay: open ? `${150 + nav.length * 70}ms` : '0ms' }}

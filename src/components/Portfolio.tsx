@@ -66,10 +66,10 @@ export default function Portfolio() {
   }
 
   return (
-    <section id="portfolio" className="relative overflow-hidden bg-[#0d0d0d] py-28">
+    <section id="portfolio" className="relative overflow-hidden bg-[#101D2B] py-28">
       <div className="mx-auto max-w-6xl px-6 text-center">
-        <span className="eyebrow text-2xl font-medium text-white/70 md:text-4xl">Portfolio</span>
-        <p className="mx-auto mt-5 max-w-2xl text-[17px] leading-relaxed text-white/55">
+        <span className="eyebrow text-2xl font-medium text-[#F5F1E9]/75 md:text-4xl">Portfolio</span>
+        <p className="mx-auto mt-5 max-w-2xl text-[17px] leading-relaxed text-[#F5F1E9]/65">
           {portfolioIntro}
         </p>
       </div>
@@ -78,7 +78,7 @@ export default function Portfolio() {
         {ghostLogos.map((g, i) => (
           <div
             key={i}
-            className="ghost-logo absolute rounded-2xl bg-white/95 p-3 opacity-90 shadow-lg shadow-black/20"
+            className="ghost-logo absolute rounded-2xl bg-[#F5F1E9]/95 p-3 opacity-90 shadow-lg shadow-black/20"
             style={{ top: g.top, left: g.left, width: g.size, animationDelay: g.delay }}
           >
             <img src={g.logo} alt="" className="w-full object-contain" />
@@ -89,12 +89,12 @@ export default function Portfolio() {
           className="pointer-events-none absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full md:h-[640px] md:w-[640px]"
           style={{
             background:
-              'radial-gradient(circle, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0.06) 42%, transparent 72%)',
+              'radial-gradient(circle, rgba(196,164,106,0.20) 0%, rgba(196,164,106,0.07) 42%, transparent 72%)',
           }}
         />
 
         <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center">
-          <div className="relative flex h-64 w-64 items-center justify-center overflow-hidden rounded-[2.5rem] bg-[#ffffff] shadow-[0_30px_80px_rgba(0,0,0,0.45)] md:h-[22rem] md:w-[22rem]">
+          <div className="relative flex h-64 w-64 items-center justify-center overflow-hidden rounded-[2.5rem] bg-[#F5F1E9] shadow-[0_30px_80px_rgba(0,0,0,0.45)] md:h-[22rem] md:w-[22rem]">
             <img
               src={client.logo}
               alt={client.name}
@@ -105,13 +105,13 @@ export default function Portfolio() {
 
           <div className="mt-8 flex flex-col items-center text-center">
             <div className="flex items-baseline gap-2">
-              <span className="font-normal text-2xl text-[#cccccc] md:text-3xl">
+              <span className="font-normal text-2xl text-[#C4A46A] md:text-3xl">
                 {String(index + 1).padStart(2, '0')}
               </span>
-              <span className="text-sm text-white/35">/ {String(clients.length).padStart(2, '0')}</span>
+              <span className="text-sm text-[#F5F1E9]/40">/ {String(clients.length).padStart(2, '0')}</span>
             </div>
             <p
-              className="mt-2 text-2xl text-white transition-opacity duration-300 md:text-3xl"
+              className="mt-2 text-2xl text-[#F5F1E9] transition-opacity duration-300 md:text-3xl"
               style={{ opacity: phase === 'visible' ? 1 : 0, fontFamily: "'Fraunces', Georgia, serif" }}
             >
               {client.name}
