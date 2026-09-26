@@ -111,7 +111,7 @@ export default function Portfolio() {
             </div>
             <p
               className="mt-2 text-2xl text-[#F5F1E9] transition-opacity duration-300 md:text-3xl"
-              style={{ opacity: phase === 'visible' ? 1 : 0, fontFamily: "'Fraunces', Georgia, serif" }}
+              style={{ opacity: phase === 'visible' ? 1 : 0 }}
             >
               {client.name}
             </p>

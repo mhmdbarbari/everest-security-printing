@@ -68,12 +68,9 @@ export default function Hero() {
         <h1 className="mt-6 max-w-2xl font-normal text-5xl leading-[1.05] text-[#F5F1E9] md:text-7xl">
           Trust,
           <br />
-          <span className="italic text-[#C4A46A]">engraved</span> in every detail.
+          <span className="text-[#C4A46A]">engraved</span> in every detail.
         </h1>
-        <p
-          className="mt-7 max-w-lg text-xl italic leading-relaxed text-[#F5F1E9]/75"
-          style={{ fontFamily: "'Fraunces', Georgia, serif" }}
-        >
+        <p className="mt-7 max-w-lg text-xl leading-relaxed text-[#F5F1E9]/75">
           {hero.subtitle}
         </p>
         <div className="mt-12 flex flex-wrap items-center gap-7">

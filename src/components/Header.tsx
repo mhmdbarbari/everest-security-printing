@@ -73,8 +73,8 @@ export default function Header() {
       >
         <span
           aria-hidden
-          className="pointer-events-none absolute -right-8 -top-14 select-none italic text-[#F5F1E9]/[0.05]"
-          style={{ fontFamily: "'Fraunces', Georgia, serif", fontSize: '13rem' }}
+          className="pointer-events-none absolute -right-8 -top-14 select-none font-bold text-[#F5F1E9]/[0.05]"
+          style={{ fontSize: '13rem' }}
         >
           e
         </span>
@@ -85,10 +85,10 @@ export default function Header() {
               <a
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className={`relative inline-block py-3 text-2xl text-[#F5F1E9] transition-all duration-500 ease-out ${
+                className={`relative inline-block py-3 text-2xl font-medium text-[#F5F1E9] transition-all duration-500 ease-out ${
                   open ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
                 }`}
-                style={{ fontFamily: "'Fraunces', Georgia, serif", transitionDelay: open ? `${150 + i * 70}ms` : '0ms' }}
+                style={{ transitionDelay: open ? `${150 + i * 70}ms` : '0ms' }}
               >
                 {item.label}
                 <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-[#C4A46A] transition-all duration-300 ease-out group-hover:w-full" />

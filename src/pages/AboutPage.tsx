@@ -74,10 +74,7 @@ export default function AboutPage() {
           >
             ← Back Home
           </Link>
-          <h1
-            className="max-w-2xl text-4xl leading-[1.05] text-[#F5F1E9] md:text-6xl"
-            style={{ fontFamily: "'Fraunces', Georgia, serif" }}
-          >
+          <h1 className="max-w-2xl text-4xl leading-[1.05] text-[#F5F1E9] md:text-6xl">
             {aboutPage.intro.heading}
           </h1>
         </div>
@@ -98,10 +95,7 @@ export default function AboutPage() {
         bg="#EFE7D6"
       >
         <p>{aboutPage.qhse.mission}</p>
-        <blockquote
-          className="border-l-2 border-[#C4A46A] pl-5 text-xl italic leading-snug text-[#101D2B]"
-          style={{ fontFamily: "'Fraunces', Georgia, serif" }}
-        >
+        <blockquote className="border-l-2 border-[#C4A46A] pl-5 text-xl font-medium leading-snug text-[#101D2B]">
           {aboutPage.qhse.vision}
         </blockquote>
         <p className="font-medium text-[#101D2B]">{aboutPage.qhse.actionsIntro}</p>
@@ -134,12 +128,7 @@ export default function AboutPage() {
       </Chapter>
 
       <section className="bg-[#101D2B] py-20 text-center">
-        <h2
-          className="text-3xl text-[#F5F1E9] md:text-4xl"
-          style={{ fontFamily: "'Fraunces', Georgia, serif" }}
-        >
-          Ready to work with us?
-        </h2>
+        <h2 className="text-3xl text-[#F5F1E9] md:text-4xl">Ready to work with us?</h2>
         <Link
           to="/#quotations"
           className="mt-8 inline-block rounded-full bg-[#C4A46A] px-7 py-3 text-sm font-medium text-[#101D2B] transition hover:bg-[#d3b884]"

@@ -23,10 +23,7 @@ export default function SecurePrintingPage() {
           >
             ← Back Home
           </Link>
-          <h1
-            className="max-w-2xl text-4xl leading-[1.05] text-[#F5F1E9] md:text-6xl"
-            style={{ fontFamily: "'Fraunces', Georgia, serif" }}
-          >
+          <h1 className="max-w-2xl text-4xl leading-[1.05] text-[#F5F1E9] md:text-6xl">
             {securePrintingPage.intro.heading}
           </h1>
         </div>
@@ -79,10 +76,7 @@ export default function SecurePrintingPage() {
 
       <section className="bg-[#EFE7D6] py-24">
         <div className="reveal mx-auto max-w-6xl px-6">
-          <h3
-            className="text-2xl font-normal text-[#101D2B] md:text-3xl"
-            style={{ fontFamily: "'Fraunces', Georgia, serif" }}
-          >
+          <h3 className="text-2xl font-normal text-[#101D2B] md:text-3xl">
             {securePrintingPage.clientsHeading}
           </h3>
           <div className="mt-8 flex flex-wrap gap-3">
@@ -96,12 +90,7 @@ export default function SecurePrintingPage() {
       </section>
 
       <section className="bg-[#101D2B] py-20 text-center">
-        <h2
-          className="text-3xl text-[#F5F1E9] md:text-4xl"
-          style={{ fontFamily: "'Fraunces', Georgia, serif" }}
-        >
-          Ready to work with us?
-        </h2>
+        <h2 className="text-3xl text-[#F5F1E9] md:text-4xl">Ready to work with us?</h2>
         <Link
           to="/#quotations"
           className="mt-8 inline-block rounded-full bg-[#C4A46A] px-7 py-3 text-sm font-medium text-[#101D2B] transition hover:bg-[#d3b884]"
