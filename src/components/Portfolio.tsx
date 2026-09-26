@@ -12,7 +12,6 @@ const GHOSTS = [
   { top: '72%', left: '4%', size: 90, delay: '2.1s', clientIndex: 7 },
   { top: '80%', left: '86%', size: 78, delay: '0.6s', clientIndex: 10 },
   { top: '4%', left: '44%', size: 68, delay: '3s', clientIndex: 13 },
-  { top: '88%', left: '44%', size: 70, delay: '1.8s', clientIndex: 2 },
   { top: '46%', left: '1%', size: 64, delay: '2.6s', clientIndex: 8 },
   { top: '42%', left: '91%', size: 66, delay: '0.9s', clientIndex: 11 },
 ]
